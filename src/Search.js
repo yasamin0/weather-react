@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./style.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function Search() {
   const [city, setCity] = useState("please enter a city");

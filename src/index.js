@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./style.css";
+import "bootstrap/dist/css/bootstrap.css";
 import MainCityInfo from "./MainCityInfo";
 import Forecast from "./Forecast";
 import DayInfoDet from "./DayInfoDet";
