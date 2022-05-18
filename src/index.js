@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./style.css";
+import MainCityInfo from "./MainCityInfo";
+import Forecast from "./Forecast";
+import DayInfoDet from "./DayInfoDet";
+import WeatherDetails from "./WeatherDetails";
+import Time from "./Time";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+function App() {
+  return (
+    <div className="App">
+      <video autoPlay muted loop id="myVideo">
+        <source src="/images/rain.mp4" type="video/mp4" />
+      </video>
+      <div className="main-app">
+        <div className="row main-row">
+          <MainCityInfo />
+          <Forecast />
+          <DayInfoDet />
+          <WeatherDetails />
+          <Time />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

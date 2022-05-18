@@ -1,0 +1,126 @@
+html {
+  height: 100%;
+}
+
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.main-app {
+  display: block;
+  margin: 85px auto;
+  width: 75% !important;
+}
+.app {
+  background-color: #aeadad;
+  opacity: 0.8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  color: white;
+  height: 100% !important;
+  margin: 4px !important;
+}
+.input-group-text {
+  background-color: #b191f6 !important;
+}
+.head-img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.days-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.forecast-card {
+  font-size: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.forecast-card h5 {
+  text-align: center;
+  font-size: 100% !important;
+  width: 100% !important;
+}
+.time-card {
+  padding-top: 32px;
+  padding-bottom: 23px;
+  margin-left: 2px !important;
+}
+.weather-details-card {
+  padding-top: 22px;
+  padding-bottom: 23px;
+  margin-left: 3px !important;
+  margin-right: 2px !important;
+}
+.day-info-card {
+  padding-bottom: 15px;
+  padding-top: 16px;
+  margin-right: 3px !important;
+}
+h3 {
+  text-align: center;
+  font-size: 100% !important;
+  width: 100% !important;
+}
+p {
+  margin-bottom: 6px !important;
+  font-size: 100% !important;
+}
+
+@media only screen and (min-width: 814px) {
+  .weather-details-card {
+    position: relative;
+    top: -70px !important;
+  }
+  .time-card {
+    position: relative;
+    top: -70px !important;
+  }
+  .weather-info-card {
+    margin-left: 30px !important;
+  }
+  .day-info-card {
+    margin-left: 30px !important;
+  }
+}
+@media only screen and (max-width: 814px) {
+  .weather-details-card {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .time-card {
+    padding-top: 3px;
+    padding-bottom: 14px;
+  }
+  .day-info-card {
+    padding-bottom: 30px;
+    padding-top: 31px;
+    margin-right: 3px !important;
+  }
+
+  .weather-info-card {
+    padding-bottom: 7px;
+  }
+}
+@media only screen and (width: 814px) {
+  .weather-details-card {
+    position: relative;
+    top: -50px !important;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .time-card {
+    position: relative;
+    top: -50px !important;
+    padding-top: 23px;
+    padding-bottom: 13px;
+  }
+} ;
