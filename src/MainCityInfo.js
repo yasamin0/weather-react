@@ -1,15 +1,15 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import "./style.css";
-import Search from "./Search";
+import "bootstrap/dist/css/bootstrap.css";
 
-export default function MainCityInfo() {
+export default function MainCityInfo(props) {
   return (
-    <div className="col-md-4 app weather-info-card">
-      <Search />
+    <div>
+      {" "}
       <div className="row">
         <div className="col-6">
-          <h4 className="text-center">London</h4>
+          <h4 className="text-center">{props.city}</h4>
         </div>
         <div className="col-6">
           <h4 className="text-center">6 C|F</h4>
