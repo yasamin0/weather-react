@@ -1,5 +1,4 @@
 import logo from "./logo.svg";
-import "../static/src/style.css";
 
 import "./App.css";
 

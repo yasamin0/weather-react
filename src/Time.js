@@ -1,5 +1,4 @@
 import React from "react";
-import "../static/src/style.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 export default function Time(props) {

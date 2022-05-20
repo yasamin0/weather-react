@@ -1,5 +1,4 @@
 import React from "react";
-import "../static/src/style.css";
 import ForecastEachDay from "./ForecastEachDay";
 import "bootstrap/dist/css/bootstrap.css";
 
