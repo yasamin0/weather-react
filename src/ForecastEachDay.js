@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 export default function ForecastEachDay(props) {
