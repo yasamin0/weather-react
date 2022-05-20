@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import "../static/css/style.css";
+import logo from "./logo.svg";
+import "../static/src/style.css";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
-import "../static/css/style.css";
+import "../static/src/style.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import Forecast from "./Forecast";

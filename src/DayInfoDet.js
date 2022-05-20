@@ -1,5 +1,5 @@
 import React from "react";
-import "../static/css/style.css";
+import "../static/src/style.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 export default function DayInfoDet(props) {
