@@ -11,7 +11,7 @@ export default function MainCityInfo(props) {
           <h4 className="text-center">{props.data.city}</h4>
         </div>
         <div className="col-6">
-          <h4 className="text-center">{props.data.temperature} C|F</h4>
+          <h4 className="text-center">{Math.round(props.data.temperature)} C|F</h4>
         </div>
       </div>
       <img src="/images/clouds.gif" className="head-img" alt="Img" />

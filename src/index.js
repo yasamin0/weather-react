@@ -11,7 +11,8 @@ import Time from "./Time";
 import MainCityInfo from "./MainCityInfo";
 
 function App() {
-  const [city, setCity] = useState("london");
+  let [city, setCity] = useState("london");
+
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
@@ -20,7 +21,7 @@ function App() {
       coordinates: response.data.coord,
       temperature: response.data.main.temp,
       feelsLike: response.data.main.feels_like,
-      pressure:response.data.main.pressure,
+      pressure: response.data.main.pressure,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
@@ -31,21 +32,20 @@ function App() {
     console.log(response);
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    search();
-  }
-
-  function handleCityChange(event) {
-    setCity(event.target.value);
-  }
-
   function search() {
     const apiKey = "0cf110a0d3901b43d101004553f09b93";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
   if (weatherData.ready) {
+    function handleSubmit(event) {
+      event.preventDefault();
+      search();
+    }
+
+    function handleCityChange(event) {
+      setCity(event.target.value);
+    }
     return (
       <div className="App">
         <video autoPlay muted loop id="myVideo">
@@ -64,6 +64,8 @@ function App() {
                   type="text"
                   className="form-control"
                   aria-label="Amount (to the nearest dollar)"
+                  placeholder="Enter a city.."
+                  autoFocus="on"
                   onChange={handleCityChange}
                 />
                 <div className="input-group-append">

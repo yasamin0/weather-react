@@ -7,7 +7,7 @@ export default function WeatherDetails(props) {
     <div className="col-md-4 app weather-details-card">
       <p>
         <i className="fa-solid fa-temperature-half"></i> feels like :{" "}
-        {props.data.feelsLike}
+        {Math.round(props.data.feelsLike)}
       </p>
       <p>
         <i className="fa-solid fa-droplet"></i> humidity : {props.data.humidity}
