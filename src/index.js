@@ -80,9 +80,9 @@ function App() {
               <MainCityInfo data={weatherData} />
             </div>
             <Forecast coordinates={weatherData.coordinates} />
-            <DayInfoDet />
+            <DayInfoDet date={weatherData.date} />
             <WeatherDetails data={weatherData} />
-            <Time />
+            <Time date={weatherData.date} />
           </div>
         </div>
       </div>
