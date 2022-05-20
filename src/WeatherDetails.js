@@ -2,20 +2,22 @@ import React from "react";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-export default function WeatherDetails() {
+export default function WeatherDetails(props) {
   return (
     <div className="col-md-4 app weather-details-card">
       <p>
-        <i className="fa-solid fa-temperature-half"></i> feels like : 20
+        <i className="fa-solid fa-temperature-half"></i> feels like :{" "}
+        {props.data.feelsLike}
       </p>
       <p>
-        <i className="fa-solid fa-droplet"></i> humidity : 45
+        <i className="fa-solid fa-droplet"></i> humidity : {props.data.humidity}
       </p>
       <p>
-        <i className="fa-solid fa-wind"></i> wind : 22
+        <i className="fa-solid fa-wind"></i> wind : {props.data.wind}
       </p>
       <p>
-        <i className="fa-solid fa-gauge-high"></i> pressure : 20
+        <i className="fa-solid fa-gauge-high"></i> pressure :{" "}
+        {props.data.pressure}
       </p>
     </div>
   );

@@ -1,5 +1,4 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -9,14 +8,14 @@ export default function MainCityInfo(props) {
       {" "}
       <div className="row">
         <div className="col-6">
-          <h4 className="text-center">{props.city}</h4>
+          <h4 className="text-center">{props.data.city}</h4>
         </div>
         <div className="col-6">
-          <h4 className="text-center">6 C|F</h4>
+          <h4 className="text-center">{props.data.temperature} C|F</h4>
         </div>
       </div>
       <img src="/images/clouds.gif" className="head-img" alt="Img" />
-      <h5 className="text-center">Clouds</h5>
+      <h5 className="text-center">{props.data.description}</h5>
       <div className="row">
         <div className="col-6 text-center">
           <h5 className="text-center">
